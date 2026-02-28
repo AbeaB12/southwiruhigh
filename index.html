@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Wiru High School | southwiruhigh.com.pg</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0a2e6e;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:55px;
+    margin-right:12px;
+}
+
+.logo-text h1{
+    font-size:20px;
+}
+
+.logo-text span{
+    font-size:13px;
+    opacity:0.8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* SLIDER */
+.slider{
+    position:relative;
+    height:85vh;
+    overflow:hidden;
+}
+
+.slides{
+    display:flex;
+    width:300%;
+    height:100%;
+    animation:slide 15s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:85vh;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%{margin-left:0;}
+    25%{margin-left:0;}
+    33%{margin-left:-100%;}
+    58%{margin-left:-100%;}
+    66%{margin-left:-200%;}
+    91%{margin-left:-200%;}
+    100%{margin-left:0;}
+}
+
+.slider-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    background:rgba(0,0,0,0.5);
+    padding:25px;
+    border-radius:10px;
+}
+
+.slider-text h2{
+    font-size:40px;
+}
+
+.slider-text p{
+    font-size:18px;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:30px;
+    color:#0a2e6e;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* FOOTER */
+footer{
+    background:#0a2e6e;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .slider-text h2{
+        font-size:24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <!-- REAL PNG LOGO (replace file with real logo) -->
+        <img src="logo.png" alt="South Wiru High School Logo">
+        <div class="logo-text">
+            <h1>South Wiru High School</h1>
+            <span>www.southwiruhigh.com.pg</span>
+        </div>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ANIMATED IMAGE SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="1772285680771.jpg" alt="School Event">
+        <img src="1772285680771.jpg" alt="Graduation">
+        <img src="1772285680771.jpg" alt="Development">
+    </div>
+
+    <div class="slider-text">
+        <h2>Building the Future of South Wiru</h2>
+        <p>Quality Education • Leadership • Development</p>
+    </div>
+</div>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About the School</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            South Wiru High School is located in South Wiru LLG,
+            Ialibu-Pangia District, Southern Highlands Province.
+            It is one of the fastest developing high schools in the region.
+        </div>
+        <div class="card">
+            Situated in the Pangia area, the school features
+            modern classrooms, staff housing, and continued infrastructure growth.
+        </div>
+    </div>
+</section>
+
+<section id="leadership">
+    <div class="section-title">
+        <h2>Leadership & Funding</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            Supported by the Southern Highlands Provincial Government
+            under Governor William Powi and South Wiru LLG President Joseph Kunukunu.
+        </div>
+        <div class="card">
+            The school has received approximately K4 million in development funding
+            to strengthen infrastructure and academic excellence.
+        </div>
+    </div>
+</section>
+
+<section id="milestones">
+    <div class="section-title">
+        <h2>Milestones</h2>
+    </div>
+    <div class="card">
+        The school celebrated its inaugural Grade 10 graduation
+        on December 6, 2024 — marking a historic milestone.
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Information</h2>
+    </div>
+    <div class="card">
+        South Wiru LLG, Ialibu-Pangia District<br>
+        Southern Highlands Province, Papua New Guinea<br><br>
+        Domain: www.southwiruhigh.com.pg
+    </div>
+</section>
+
+<footer>
+    © 2026 South Wiru High School | southwiruhigh.com.pg
+</footer>
+
+</body>
+</html>
